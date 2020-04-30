@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.row {
+    font-family: "Goudy Titling W05 SemiBold";
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    /* color: rgb(12, 51, 43); */
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2em;
+}
+
+#logo-div {
+    min-width: 48px;
+    position: relative;
+    text-align: center;
+}
+
+#logo {
+    max-height: 100%;  
+    max-width: 100%; 
+    /* position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;   */
+    margin: auto;
+
+}
+
+.fa-exclamation-triangle  {
+    color: red;
+}
+
+.closed {
+    text-decoration: line-through;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+@font-face {font-family: "Goudy Titling W05 SemiBold";
+    src: url("fonts/GTWSB/GTWSB.eot"); /* IE9*/
+    src: url("fonts/GTWSB/GTWSB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/GTWSB/GTWSB.woff2") format("woff2"), /* chrome、firefox */
+    url("fonts/GTWSB/GTWSB.woff") format("woff"), /* chrome、firefox */
+    url("fonts/GTWSB/GTWSB.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("fonts/GTWSB/GTWSB.svg#Goudy Titling W05 SemiBold") format("svg"); /* iOS 4.1- */
+}
+
+hr {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, from(rgb(0, 0, 0)), to(#fff)); */
+}
+
+.normal-hr {
+    padding: 0;
+}
+
+.nav-bar {
+    text-align: center;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color:red;
+}
+
+.links {
+    text-align: center;
+}
