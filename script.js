@@ -1,6 +1,8 @@
 const slideshow_timer = 5000; // in millseconds
 const slideshow_max = 5; // # of images
+const slideshow_changeDelay = 200; // in milliseconds
 var slideshow_ind = 0;
+var slideshow_lastChanged = 0;
 
 var backtotop_div = document.getElementById("backtotop-text");
 backtotop_div.addEventListener("click", () => {
@@ -40,6 +42,13 @@ function changeImage(dir, repeat) {
 }
 
 function navigateImage(dir) {
+  if (slideshow_lastChanged) {
+    let currDate = new Date();
+    if (currDate.getTime() - slideshow_lastChanged.getTime() < slideshow_changeDelay) {
+      return;
+    }
+  }
+  slideshow_lastChanged = new Date();
   changeImage(dir, false);
 }
 
