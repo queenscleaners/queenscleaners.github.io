@@ -193,6 +193,7 @@ footer {
   background-color: #222;
   color: white;
   font-weight: 300;
+  height: 2.5em;
 }
 
 #image-gallery-desc {
@@ -202,17 +203,20 @@ footer {
 
 #image-gallery-controls {
   float: right;
-  margin-right: .2em;
+  margin-right: .5em;
+  display: flex;
 }
 
 #arrow-left,
 #arrow-right {
   transition: .1s ease-in-out;
-  font-size: .9em;
+  font-size: 1.7em;
+  margin: auto;
 }
 
 #image-gallery-text {
   margin: 0 .5em 0 .5em;
+  font-size: 1.7em;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -272,13 +276,13 @@ footer {
 }
 
 @media(hover: hover) {
+  #nav-links a:hover {
+    color: red;
+  }
+
   #arrow-left:hover,
   #arrow-right:hover {
     cursor: pointer;
-    color: red;
-  }
-  
-  #nav-links a:hover {
     color: red;
   }
   
@@ -287,6 +291,23 @@ footer {
   }
   
   #backtotop-text:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+@media(any-pointer: coarse) {
+  #arrow-left:active,
+  #arrow-right:active {
+    cursor: pointer;
+    color: red;
+  }
+
+  #backtotop-text:active>#backtotop-icon {
+    transform: translate(0, -.35em);
+  }
+  
+  #backtotop-text:active {
     cursor: pointer;
     opacity: 1;
   }
