@@ -295,25 +295,3 @@ footer {
     opacity: 1;
   }
 }
-
-@media(any-pointer: coarse) {
-  #arrow-left:active,
-  #arrow-right:active {
-    cursor: pointer;
-    color: red;
-  }
-
-  #arrow-left:not(:active),
-  #arrow-right:not(:active) {
-    color: white;
-  }
-
-  /* #backtotop-text:active>#backtotop-icon {
-    transform: translate(0, -.35em);
-  }
-  
-  #backtotop-text:active {
-    cursor: pointer;
-    opacity: 1;
-  } */
-}
