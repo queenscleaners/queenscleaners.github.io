@@ -1,3 +1,8 @@
+const canHover = !(matchMedia('(hover: none)').matches);
+if (canHover) {
+  document.body.classList.add('can-hover');
+}
+
 const slideshow_timer = 5000; // in millseconds
 const slideshow_max = 5; // # of images
 const slideshow_changeDelay = 200; // in milliseconds
