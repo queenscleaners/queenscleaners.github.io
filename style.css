@@ -275,21 +275,23 @@ footer {
   }
 }
 
-.can-hover #nav-links a:hover {
-  color: red;
-}
+@media(hover: hover) and (pointer: fine) {
+  #nav-links a:hover {
+    color: red;
+  }
 
-.can-hover #arrow-left:hover,
-.can-hover #arrow-right:hover {
-  cursor: pointer;
-  color: red;
-}
+  #arrow-left:hover,
+  #arrow-right:hover {
+    cursor: pointer;
+    color: red;
+  }
 
-.can-hover #backtotop-text:hover>#backtotop-icon {
-  transform: translate(0, -.35em);
-}
+  #backtotop-text:hover>#backtotop-icon {
+    transform: translate(0, -.35em);
+  }
 
-.can-hover #backtotop-text:hover {
-  cursor: pointer;
-  opacity: 1;
+  #backtotop-text:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
 }
