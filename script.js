@@ -1,4 +1,4 @@
-const canHover = !(matchMedia('(pointer: coarse) and (hover: none)').matches);
+const canHover = !(matchMedia('(hover: none)').matches);
 if (canHover) {
   document.body.classList.add('can-hover');
 }
