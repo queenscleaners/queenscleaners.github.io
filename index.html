@@ -6,33 +6,6 @@ https://developers.google.com/my-business/content/review-data#list_all_reviews -
     CREATE A SLIDE SHOW THING
         -- MAKE ENLARGE ON CLICK
     ADD AN ANIMATION CLICK FOR SLIDESHOW
-
-      const images = document.querySelectorAll(".certificate-img");
-      images.forEach(function(img) {
-          img.addEventListener("click", function() {
-          this.classList.toggle("img-active");
-        });
-      });
-
-      window.addEventListener("scroll", function() {
-        if (this.scrollY > 900) {
-          document.querySelector("#navbar").classList.add("nav-active");
-          // console.log(this.scrollY);
-        }
-        else {
-          document.querySelector("#navbar").classList.remove("nav-active");
-        }
-      });
-
-    .img-active {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        margin-top: calc(-1*(70vh / 2));
-        margin-left: calc(-1*(75vw / 2));
-        width: 75vw;
-        height: 70vh;
-    }
 -->
 <!DOCTYPE html>
 <html lang="en">
