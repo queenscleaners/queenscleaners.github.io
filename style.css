@@ -275,7 +275,7 @@ footer {
   }
 }
 
-@media(hover: hover) {
+@media not all and (hover: none) {
   #nav-links a:hover {
     color: red;
   }
