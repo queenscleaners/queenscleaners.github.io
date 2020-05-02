@@ -91,6 +91,11 @@ footer {
   color: red;
 }
 
+.btn {
+  margin: .5em 0 .5em 0;
+  font-size: .9em;
+}
+
 /* || HEADER */
 
 #business-title {

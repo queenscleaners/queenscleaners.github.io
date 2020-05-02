@@ -133,13 +133,13 @@ https://developers.google.com/my-business/content/review-data#list_all_reviews -
           <div class="col-md-6">
             <span class="header-text">Business Hours</span>
             <ul>
-              <li>Mon. 9:00 a.m. - 6:00 p.m.</li>
-              <li class="strikethrough">Tue. Closed</li>
-              <li>Wed. 9:00 a.m. - 6:00 p.m.</li>
-              <li class="strikethrough">Thu. Closed</li>
-              <li>Fri. 9:00 a.m. - 6:00 p.m.</li>
-              <li>Sat. 9:00 a.m. - 6:00 p.m.</li>
-              <li class="strikethrough">Sun. Closed</li>
+              <li id="day0" class="strikethrough">Sun. Closed</li>
+              <li id="day1">Mon. 9:00 a.m. - 6:00 p.m.</li>
+              <li id="day2" class="strikethrough">Tue. Closed</li>
+              <li id="day3">Wed. 9:00 a.m. - 6:00 p.m.</li>
+              <li id="day4" class="strikethrough">Thu. Closed</li>
+              <li id="day5">Fri. 9:00 a.m. - 6:00 p.m.</li>
+              <li id="day6">Sat. 9:00 a.m. - 6:00 p.m.</li>
             </ul>
             <br />
           </div>
@@ -181,12 +181,16 @@ https://developers.google.com/my-business/content/review-data#list_all_reviews -
         <div class="row">
           <div class="col">
             <span class="header-text">Directions</span><br />
-            <span>Our business is located across the No Frills by the intersection at Royal York & Queensway.</span>
+            <span>Our business is located across the No Frills by the intersection at Royal York & Queensway.</span><br />
+            <span>
+              <a href="https://www.google.com/maps?daddr=763+The+Queensway,+Etobicoke,+ON+M8Z+1N1" target="_blank"><button class="btn btn-info">Get directions</button></a>
+            </span>
+            <span>
+              <a href="https://www.google.ca/search?q=Queen%27s+Cleaners,+763+The+Queensway,+Etobicoke,+ON+M8Z+1N1&ludocid=15102309020670140293#lrd=0x882b36309e35f069:0xd1962e09f1389f85,1" target="_blank"><button class="btn btn-info">See reviews</button></a>
+            </span>
             <div id="google-maps">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2888.060510489684!2d-79.5062746!3d43.6260995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b36309e35f069%3A0xd1962e09f1389f85!2sQueen&#39;s%20Cleaners!5e0!3m2!1sen!2sca!4v1588135800032!5m2!1sen!2sca"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.0!2d-79.50635858422655!3d43.62584676221651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b36309e35f069%3A0xd1962e09f1389f85!2sQueen&#39;s%20Cleaners!5e0!3m2!1sen!2sca!4v1588402309849!5m2!1sen!2sca" 
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
           </div>
         </div>

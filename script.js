@@ -42,3 +42,7 @@ function changeImage(dir, repeat) {
 function navigateImage(dir) {
   changeImage(dir, false);
 }
+
+let currDay = new Date().getDay();
+let day = document.getElementById("day" + currDay);
+day.classList.add("bold");
