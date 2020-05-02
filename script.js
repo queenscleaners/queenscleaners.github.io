@@ -1,8 +1,8 @@
 const slideshow_timer = 5000; // in millseconds
 const slideshow_max = 5; // # of images
 const slideshow_changeDelay = 200; // in milliseconds
-var slideshow_ind = 0;
-var slideshow_lastChanged = 0;
+var slideshow_ind = 0; // starting index
+var slideshow_lastChanged = 0; // timestamp last changed
 
 var backtotop_div = document.getElementById("backtotop-text");
 backtotop_div.addEventListener("click", () => {

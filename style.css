@@ -22,6 +22,10 @@ header {
   margin-top: 1em;
 }
 
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration: none;
+}
+
 ul {
   padding-left: 1.5em;
   margin-bottom: 0;
@@ -110,6 +114,10 @@ footer {
   text-align: center;
 }
 
+#logo-div {
+  margin-top: .65em;
+}
+
 #logo {
   width: 32px;
 }
@@ -124,10 +132,6 @@ footer {
 #nav-links li {
   line-height: 2.5em;
   text-align: center;
-}
-
-#nav-links a:hover {
-  color: red;
 }
 
 #covid19-notice {
@@ -169,15 +173,6 @@ footer {
   font-size: 1em;
 }
 
-#backtotop-text:hover>#backtotop-icon {
-  transform: translate(0, -.35em);
-}
-
-#backtotop-text:hover {
-  cursor: pointer;
-  opacity: 1;
-}
-
 #my-div {
   display: flex;
 }
@@ -210,24 +205,15 @@ footer {
   margin-right: .2em;
 }
 
-
 #arrow-left,
 #arrow-right {
   transition: .1s ease-in-out;
   font-size: .9em;
 }
 
-#arrow-left:hover,
-#arrow-right:hover {
-  cursor: pointer;
-  color: red;
-}
-
 #image-gallery-text {
   margin: 0 .5em 0 .5em;
 }
-
-/* media queries */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -256,7 +242,6 @@ footer {
 }
 
 /* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { ... } */
 @media (min-width: 992px) {
   #logo {
     width: 44px;
@@ -274,7 +259,6 @@ footer {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { ... } */
 @media (min-width: 1200px) {
   #logo {
     width: 48px;
@@ -284,5 +268,26 @@ footer {
   main,
   footer {
     font-size: 1em;
+  }
+}
+
+@media(hover: hover) {
+  #arrow-left:hover,
+  #arrow-right:hover {
+    cursor: pointer;
+    color: red;
+  }
+  
+  #nav-links a:hover {
+    color: red;
+  }
+  
+  #backtotop-text:hover>#backtotop-icon {
+    transform: translate(0, -.35em);
+  }
+  
+  #backtotop-text:hover {
+    cursor: pointer;
+    opacity: 1;
   }
 }
