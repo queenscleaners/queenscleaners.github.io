@@ -1,6 +1,7 @@
 <!-- Google - My Business API
 https://developers.google.com/my-business/content/review-data#list_all_reviews -->
 <!-- TODO
+    OPTIMIZE BOOTSTRAP, JQUERY, FONTAWESOME, GOOGLEFONTS
     CREATE A SLIDE SHOW THING
         -- MAKE ENLARGE ON CLICK
 
@@ -33,158 +34,190 @@ https://developers.google.com/my-business/content/review-data#list_all_reviews -
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Style.css -->
-    <link rel="stylesheet" href="style.css">
-    <title>Queens Cleaners</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Style.css -->
+  <link rel="stylesheet" type="text/css" href="style.css?version=00">
+  <title>Queens Cleaners</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div id="nav-bar" class="row">
-                <div id="header-div" class="col-9">
-                    <h1 id="business-title">Queens Cleaners</h1>
-                    <span class="header-text">Eco-Friendly Dry Cleaning</span><br />
-                    <div class="header-desc">
-                        <span>With more than 24 years of experience in the Greater Toronto Area, we have been doing business in the Dry Cleaning industry since 1996.</span>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div id="logo-div">
-                        <img id="logo" class="img-fluid" src="images/logo.png" alt="Company Logo">
-                    </div>
-                    <nav>
-                        <ul id="nav-links">
-                            <li><hr class="nav-link-hr-end" /></li>
-                            <a href="#business-hours"><li>Business Hours</span></li></a>
-                            <li><hr class="nav-link-hr" /></li>
-                            <a href="#contact"><li>Contact</span></li></a>
-                            <li><hr class="nav-link-hr" /></li>
-                            <a href="#directions"><li>Directions</span></li></a>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <hr class="normal-hr" />
+  <header>
+    <div class="container">
+      <div id="nav-bar" class="row">
+        <div id="header-div" class="col-9">
+          <h1 id="business-title">Queens Cleaners</h1>
+          <span class="header-text">Eco-Friendly Dry Cleaning</span><br />
+          <div class="header-desc">
+            <span>With more than 24 years of experience in the Greater Toronto Area, we have been doing business in the
+              Dry Cleaning industry since 1996.</span>
+          </div>
         </div>
-    </header>
-    <main>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
-                        <span class="header-text">Our Services</span><br />
-                        <span class="underline">Eco-Friendly Dry Cleaning</span><br />
-                        <span>We use ECO-friendly solvent for your health and the environment. Your garment is handled with care. It will be thoroughly cleaned and hand finished.</span>
-                        <br /><br />
-                        <span class="underline">In-House Services & Same Day Service</span><br />
-                        <span>All of our work are performed on premise, including alterations. If you drop off your clothes before 10AM you'll be able to pick up by 4PM.</span>
-                        <br /><br />
-                        <span class="underline">Professional Alterations</span><br />
-                        <span>Over 30 years of experience with alterations and repairs for your garments.</span><br /><br />
-                    </div>
-                    <div id="image-gallery-div" class="col-md-6 offset-md-1">
-                        <img id="image-gallery-image" src="images/image0.jpg" alt="Image Gallery" class="img-fluid">
-                        <div id="image-gallery-caption">
-                            <span id="image-gallery-desc"></span><!--A picture of our eco-friendly dry cleaning machine (EasyEC).-->
-                            <div id="image-gallery-controls">
-                                <span id="arrow-left"><i class="fas fa-arrow-left"></i></span>
-                                <span id="image-gallery-text">1 / 5</span>
-                                <span id="arrow-right"><i class="fas fa-arrow-right"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr />
+        <div class="col-3">
+          <div id="logo-div">
+            <img id="logo" class="img-fluid" src="images/logo.png" alt="Company Logo">
+          </div>
+          <nav>
+            <ul id="nav-links">
+              <li>
+                <hr class="nav-link-hr-end" />
+              </li>
+              <a href="#business-hours">
+                <li>Business Hours</span></li>
+              </a>
+              <li>
+                <hr class="nav-link-hr" />
+              </li>
+              <a href="#contact">
+                <li>Contact</span></li>
+              </a>
+              <li>
+                <hr class="nav-link-hr" />
+              </li>
+              <a href="#directions">
+                <li>Directions</span></li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="normal-hr" />
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <span class="header-text">Our Services</span><br />
+            <span class="underline">Eco-Friendly Dry Cleaning</span><br />
+            <span>We use ECO-friendly solvent for your health and the environment. Your garment is handled with care. It
+              will be thoroughly cleaned and hand finished.</span>
+            <br /><br />
+            <span class="underline">In-House Services & Same Day Service</span><br />
+            <span>All of our work are performed on premise, including alterations. If you drop off your clothes before
+              10AM you'll be able to pick up by 4PM.</span>
+            <br /><br />
+            <span class="underline">Professional Alterations</span><br />
+            <span>Over 30 years of experience with alterations and repairs for your garments.</span><br /><br />
+          </div>
+          <div id="image-gallery-div" class="col-md-6 offset-md-1">
+            <img id="image-gallery-image" src="images/image0.jpg" alt="Image Gallery" class="img-fluid">
+            <div id="image-gallery-caption">
+              <span id="image-gallery-desc"></span>
+              <!--A picture of our eco-friendly dry cleaning machine (EasyEC).-->
+              <div id="image-gallery-controls">
+                <span id="arrow-left"><i class="fas fa-arrow-left"></i></span>
+                <span id="image-gallery-text">1 / 5</span>
+                <span id="arrow-right"><i class="fas fa-arrow-right"></i></span>
+              </div>
             </div>
-        </section>
-        <section>
-            <div id="business-hours" class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <span class="header-text">Business Hours</span>
-                        <ul>
-                            <li>Mon. 9:00 a.m. - 6:00 p.m.</li>
-                            <li class="strikethrough">Tue. Closed</li>
-                            <li>Wed. 9:00 a.m. - 6:00 p.m.</li>
-                            <li class="strikethrough">Thu. Closed</li>
-                            <li>Fri. 9:00 a.m. - 6:00 p.m.</li>
-                            <li>Sat. 9:00 a.m. - 6:00 p.m.</li>
-                            <li class="strikethrough">Sun. Closed</li>
-                        </ul>
-                        <br />
-                    </div>
-                    <div class="col-md-6">
-                        <p id="covid19-notice">
-                            <span class="bold">Notice</span><br />
-                            <i class="fas fa-exclamation-triangle"></i><span>&nbsp;&nbsp;Due to the COVID-19 pandemic, our business hours have been cut temporarily. 
-                            We will return to our usual full-time business hours once we are advised by the government that it is safe to do so.
-                            <br /><br />We apologize for any inconvenience this may cause and hope you can understand that we are making efforts to help prevent the spread of COVID-19. 
-                            <br /><br />Although our business hours are reduced, we still intend to continue to provide professional and excellent service for our customers.
-                        </p>
-                    </div>
-                </div>
-                <hr />
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <section>
+      <div id="business-hours" class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="header-text">Business Hours</span>
+            <ul>
+              <li>Mon. 9:00 a.m. - 6:00 p.m.</li>
+              <li class="strikethrough">Tue. Closed</li>
+              <li>Wed. 9:00 a.m. - 6:00 p.m.</li>
+              <li class="strikethrough">Thu. Closed</li>
+              <li>Fri. 9:00 a.m. - 6:00 p.m.</li>
+              <li>Sat. 9:00 a.m. - 6:00 p.m.</li>
+              <li class="strikethrough">Sun. Closed</li>
+            </ul>
+            <br />
+          </div>
+          <div class="col-md-6">
+            <p id="covid19-notice">
+              <span class="bold">Notice</span><br />
+              <i class="fas fa-exclamation-triangle"></i><span>&nbsp;&nbsp;Due to the COVID-19 pandemic, our business
+                hours have been cut temporarily.
+                We will return to our usual full-time business hours once we are advised by the government that it is
+                safe to do so.
+                <br /><br />We apologize for any inconvenience this may cause and hope you can understand that we are
+                making efforts to help prevent the spread of COVID-19.
+                <br /><br />Although our business hours are reduced, we still intend to continue to provide professional
+                and excellent service for our customers.
+            </p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <section>
+      <div id="contact" class="container">
+        <div class="row">
+          <div class="col">
+            <span class="header-text">Contact Us</span><br />
+            <ul>
+              <li>Phone Number: <a href="tel:416-251-3931">416-251-3931</a></li>
+              <li>Email: <a href="mailto:contact@queenscleaners.ca">contact@queenscleaners.ca</a></li>
+              <li>Address: <a href="https://goo.gl/maps/G4PHmeQAxV9y1D6u6">763 The Queensway, Etobicoke, ON M8Z 1N1</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <section>
+      <div id="directions" class="container">
+        <div class="row">
+          <div class="col">
+            <span class="header-text">Directions</span><br />
+            <span>Our business is located across the No Frills by the intersection at Royal York & Queensway.</span>
+            <div id="google-maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2888.060510489684!2d-79.5062746!3d43.6260995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b36309e35f069%3A0xd1962e09f1389f85!2sQueen&#39;s%20Cleaners!5e0!3m2!1sen!2sca!4v1588135800032!5m2!1sen!2sca"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
             </div>
-        </section>
-        <section>
-            <div id="contact" class="container">
-                <div class="row">
-                    <div class="col">
-                        <span class="header-text">Contact Us</span><br />
-                        <ul>
-                            <li>Phone Number: <a href="tel:416-251-3931">416-251-3931</a></li>
-                            <li>Email: <a href="mailto:contact@queenscleaners.ca">contact@queenscleaners.ca</a></li>
-                            <li>Address: <a href="https://goo.gl/maps/G4PHmeQAxV9y1D6u6">763 The Queensway, Etobicoke, ON M8Z 1N1</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <hr />
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <div class="container-sm">
+        <div class="row">
+          <div id="copyright-div" class="col-10">
+            <span id="copyright-text">Copyright © 2020 Queens Cleaners - All Rights Reserved.</span>
+          </div>
+          <div class="col-2">
+            <div id="backtotop-text">
+              <span id="backtotop-icon"><i class="fas fa-chevron-up"></i></span>
             </div>
-        </section>
-        <section>
-            <div id="directions" class="container">
-                <div class="row">
-                    <div class="col">
-                        <span class="header-text">Directions</span><br />
-                        <span>Our business is located across the No Frills by the intersection at Royal York & Queensway.</span>
-                        <div id="google-maps">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2888.060510489684!2d-79.5062746!3d43.6260995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b36309e35f069%3A0xd1962e09f1389f85!2sQueen&#39;s%20Cleaners!5e0!3m2!1sen!2sca!4v1588135800032!5m2!1sen!2sca" 
-                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-            </div>
-        </section>
-    </main>
-    <footer>
-        <section>
-            <div class="container-sm">
-                <div class="row">
-                    <div id="copyright-div" class="col-10">
-                        <span id="copyright-text">Copyright © 2020 Queens Cleaners - All Rights Reserved.</span>
-                    </div>
-                    <div class="col-2">
-                        <div id="backtotop-text">
-                            <span id="backtotop-icon"><i class="fas fa-chevron-up"></i></span>
-                        </div>     
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+    integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>
