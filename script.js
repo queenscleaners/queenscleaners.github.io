@@ -4,6 +4,7 @@ const slideshow_changeDelay = 200; // in milliseconds
 var slideshow_ind = 0; // starting index
 var slideshow_lastChanged = 0; // timestamp last changed
 
+/* backtotop */
 var backtotop_div = document.getElementById("backtotop-text");
 backtotop_div.addEventListener("click", () => {
   $("html").animate({
@@ -11,6 +12,7 @@ backtotop_div.addEventListener("click", () => {
   }, 500);
 });
 
+/* slideshow */
 var timeouts = [];
 
 var imagegallery_img = document.getElementById("image-gallery-image");
@@ -52,6 +54,15 @@ function navigateImage(dir) {
   changeImage(dir, false);
 }
 
+/* slideshow img */
+// const images = document.getElementById("image-gallery-image");
+// images.addEventListener("click", clickImg);
+
+// function clickImg() {
+//   this.classList.toggle("img-active");
+// }
+
+/* business hours */
 let currDay = new Date().getDay();
 let day = document.getElementById("day" + currDay);
 day.classList.add("bold");
