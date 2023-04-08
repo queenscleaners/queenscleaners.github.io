@@ -72,6 +72,7 @@ h2 {
 
 .image-gallery-image {
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -95,4 +96,41 @@ h2 {
 
 .image-gallery-text {
   user-select: none;
+}
+
+.splide {
+  margin-bottom: 1em;
+}
+
+.splide__toggle {
+  display: none;
+}
+
+ul {
+  margin: 0 1em 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.day-text {
+  display: inline-block;
+  font-weight: 300;
+  width: 6em;
+}
+
+.phone-number-text {
+  display: inline-block;
+  font-weight: 300;
+  margin-right: 0.5em;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }

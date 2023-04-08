@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-
 <head>
   <!-- Google Tag Manager -->
   <script> (function (w, d, s, l, i) {
@@ -20,7 +19,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
   <link rel="manifest" href="./favicon/site.webmanifest">
-  <!-- Font Awesome -->
+  <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
   <!-- Google Fonts -->
@@ -28,11 +27,18 @@
   <!-- Style.css -->
   <link rel="stylesheet" type="text/css" href="stylesheets/fonts.css?version=1">
   <link rel="stylesheet" type="text/css" href="stylesheets/page.css?version=1">
+  <!-- Splide JS -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/splide.min.css">
+  <!-- Font Awesome JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"
+    integrity="sha256-NP9NujdEzS5m4ZxvNqkcbxyHB0dTRy9hG13RwTVBGwo=" crossorigin="anonymous"></script>
+  <!-- Splide CSS -->
+  <script src="scripts/splide.min.js"></script>
+  <!-- Title and Meta Tags -->
   <title>Queen's Cleaners | Professional Dry Cleaning</title>
   <meta name="description"
-    content="Eco-friendly dry cleaning. More than 25 years of experience in the Greater Toronto Area. We have been doing business in the Dry Cleaning industry since 1996.">
+        content="Eco-friendly dry cleaning. More than 25 years of experience in the Greater Toronto Area. We have been doing business in the Dry Cleaning industry since 1996.">
 </head>
-
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZCZT2B" height="0" width="0"
@@ -41,121 +47,98 @@
   <header>
     <div id="header-container">
       <h1>Queen's Cleaners</h1>
-      <p class="header-description">With more than 25 years of experience in the Greater Toronto Area, we have been doing business in the Dry
-        Cleaning industry since 1996.</p>
-  </div>
+      <p class="header-description">
+        With more than 25 years of experience in the Greater Toronto Area, we have been doing business in the Dry
+        Cleaning industry since 1996.
+      </p>
+    </div>
   </header>
   <main>
+    <section>
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img class="image-gallery-image" src="images/image0.jpg" alt="Image Gallery"
+                class="img-fluid"></li>
+            <li class="splide__slide"><img class="image-gallery-image" src="images/image1.jpg" alt="Image Gallery"
+                class="img-fluid"></li>
+            <li class="splide__slide"><img class="image-gallery-image" src="images/image2.jpg" alt="Image Gallery"
+                class="img-fluid"></li>
+            <li class="splide__slide"><img class="image-gallery-image" src="images/image3.jpg" alt="Image Gallery"
+                class="img-fluid"></li>
+            <li class="splide__slide"><img class="image-gallery-image" src="images/image4.jpg" alt="Image Gallery"
+                class="img-fluid"></li>
+          </ul>
+        </div>
+        <button class="splide__toggle" type="button">
+          <span class="splide__toggle__play">Play</span>
+          <span class="splide__toggle__pause">Pause</span>
+        </button>
+      </div>
+    </section>
     <section>
       <div class="description-container">
         <p class="description-heading">Our Services</p>
         <p class="description-label">Eco-Friendly Dry Cleaning</p>
-        <p class="description-text">We use ECO-friendly solvent for your health and the environment. Your garments will be handled with
+        <p class="description-text">We use ECO-friendly solvent for your health and the environment. Your garments will
+          be handled with
           care. They will also be thoroughly cleaned and hand finished.</p>
       </div>
       <div class="description-container">
         <p class="description-label">In-House Services & Same Day Service</p>
-        <p class="description-text">All of our work are performed on premise, including alterations. If you drop off your clothes before
+        <p class="description-text">All of our work are performed on premise, including alterations. If you drop off
+          your clothes before
           10AM, you'll be able to pick up by 4PM.</p>
       </div>
       <div class="description-container">
         <p class="description-label">Professional Alterations</p>
         <p class="description-text">Over 30 years of experience with alterations and repairs for your garments.</p>
       </div>
-      <div class="image-gallery-container">
-        <img class="image-gallery-image" src="images/image0.jpg" alt="Image Gallery" class="img-fluid">
-        <div class="image-gallery-caption">
-          <span class="image-gallery-desc"></span>
-          <div class="image-gallery-controls">
-            <span class="arrow-left"><i class="fas fa-arrow-left"></i></span>
-            <span class="image-gallery-text">1 / 5</span>
-            <span class="arrow-right"><i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-      </div>
     </section>
-    <!-- <section>
-      <div id="business-hours" class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <span class="header-text">Business Hours</span>
-            <ul>
-              <li id="day0" class="strikethrough">Sun. Closed</li>
-              <li id="day1">Mon. 8:00 a.m. - 7:00 p.m.</li>
-              <li id="day2">Tue. 8:00 a.m. - 7:00 p.m.</li>
-              <li id="day3">Wed. 8:00 a.m. - 7:00 p.m.</li>
-              <li id="day4">Thu. 8:00 a.m. - 7:00 p.m.</li>
-              <li id="day5">Fri. 8:00 a.m. - 7:00 p.m.</li>
-              <li id="day6">Sat. 8:30 a.m. - 5:00 p.m.</li>
-            </ul>
-          </div>
-        </div>
-        <hr />
+    <section>
+      <div class="description-container">
+        <p class="description-heading">Business Hours</p>
+        <ul>
+          <li class="description-text"><span class="day-text">Sunday</span> <span class="strikethrough">Closed</span>
+          </li>
+          <li class="description-text"><span class="day-text">Monday</span> 8:00 a.m. - 7:00 p.m.</li>
+          <li class="description-text"><span class="day-text">Tuesday</span> 8:00 a.m. - 7:00 p.m.</li>
+          <li class="description-text"><span class="day-text">Wednesday</span> 8:00 a.m. - 7:00 p.m.</li>
+          <li class="description-text"><span class="day-text">Thursday</span> 8:00 a.m. - 7:00 p.m.</li>
+          <li class="description-text"><span class="day-text">Friday</span> 8:00 a.m. - 7:00 p.m.</li>
+          <li class="description-text"><span class="day-text">Saturday</span> 8:30 a.m. - 5:00 p.m.</li>
+        </ul>
       </div>
     </section>
     <section>
-      <div id="contact" class="container">
-        <div class="row">
-          <div class="col">
-            <span class="header-text">Contact Us</span><br />
-            <ul>
-              <li>Phone Number: <a href="tel:416-251-3931">416-251-3931</a></li>
-              <li>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr />
+      <div class="description-container">
+        <p class="description-heading">Contact Us</p>
+        <span class="description-text"><span class="phone-number-text">Phone Number</span><a
+            href="tel:416-251-3931">416-251-3931</a></span>
       </div>
     </section>
     <section>
-      <div id="directions" class="container">
-        <div class="row">
-          <div class="col">
-            <span class="header-text">Directions</span><br />
-            <p>Address: <a href="https://goo.gl/maps/G4PHmeQAxV9y1D6u6">763 The Queensway, Etobicoke,
-              ON M8Z 1N1</a></p>
-            <span>
-              <a href="https://google.com/maps?daddr=763+The+Queensway,+Etobicoke,+ON+M8Z+1N1" target="_blank"><button
-                  class="btn btn-primary">Get directions</button></a>
-            </span>
-            <span>
-              <a href="https://google.ca/search?q=Queen%27s+Cleaners,+763+The+Queensway,+Etobicoke,+ON+M8Z+1N1&ludocid=15102309020670140293#lrd=0x882b36309e35f069:0xd1962e09f1389f85,1"
-                target="_blank"><button class="btn btn-primary">See reviews</button></a>
-            </span>
-            <div id="google-maps">
-              <iframe
-                src="https://google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.0!2d-79.50635858422655!3d43.62584676221651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b36309e35f069%3A0xd1962e09f1389f85!2sQueen&#39;s%20Cleaners!5e0!3m2!1sen!2sca!4v1588402309849!5m2!1sen!2sca"
-                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-            </div>
-          </div>
+      <div class="description-container">
+        <p class="description-heading">Directions</p>
+        <p class="description-text"><span class="phone-number-text">Address: <a
+              href="https://goo.gl/maps/G4PHmeQAxV9y1D6u6">763 The Queensway, Etobicoke,
+              ON M8Z 1N1</a></span></p>
+        <div id="google-maps">
+          <iframe
+            src="https://google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.0!2d-79.50635858422655!3d43.62584676221651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b36309e35f069%3A0xd1962e09f1389f85!2sQueen&#39;s%20Cleaners!5e0!3m2!1sen!2sca!4v1588402309849!5m2!1sen!2sca"
+            width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
         </div>
-        <hr />
       </div>
     </section>
   </main>
   <footer>
     <section>
-      <div class="container-sm">
-        <div class="row">
-          <div id="copyright-div" class="col-10">
-            <span id="copyright-text">Copyright © 2023 Queens Cleaners - All Rights Reserved.</span>
-          </div>
-          <div class="col-2">
-            <div id="backtotop-text">
-              <span id="backtotop-icon"><i class="fas fa-chevron-up"></i></span>
-            </div>
-          </div>
-        </div>
+      <div class="description-container">
+        <span class="description-text">Copyright © 2023 Queens Cleaners - All Rights Reserved.</span>
       </div>
     </section>
-  </footer> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"
-    integrity="sha256-NP9NujdEzS5m4ZxvNqkcbxyHB0dTRy9hG13RwTVBGwo=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
-    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  </footer>
   <script src="scripts/main.js"></script>
-  <script src="scripts/splide.min.js"></script>
 </body>
 </html>
