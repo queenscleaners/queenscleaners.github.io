@@ -1,0 +1,24 @@
+header {
+  margin-bottom: 1.25em;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-title {
+  margin: 0 0 0.25em 0;
+  font-family: "Goudy Titling W05 SemiBold";
+  font-size: 4em;
+  line-height: 1em;
+}
+
+.header-description {
+  margin: 0;
+  font-weight: 200;
+  font-size: 0.95em;
+}

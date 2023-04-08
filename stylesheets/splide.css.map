@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACN,aAAa,EAAE,GAAG;;AAGpB,eAAgB;EACd,OAAO,EAAE,IAAI;;AAGf,oBAAqB;EACnB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI",
+"sources": ["splide.scss"],
+"names": [],
+"file": "splide.css"
+}
