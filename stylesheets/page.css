@@ -4,7 +4,7 @@ body, html {
   font-family: "Roboto", sans-serif; }
 
 body {
-  padding: 1.5em 1em 1.5em 1em; }
+  padding: 1.5em 1em .5em 1em; }
 
 header {
   display: flex;
@@ -106,10 +106,21 @@ li {
 
 .phone-number-text {
   display: inline-block;
-  font-weight: 300;
-  margin-right: 0.5em; }
+  font-weight: 300; }
 
 .strikethrough {
   text-decoration: line-through; }
+
+.footer-text {
+  margin: 0;
+  font-weight: 200;
+  font-size: 0.8em; }
+
+iframe {
+  width: 100%;
+  height: auto; }
+
+.bold {
+  font-weight: 400; }
 
 /*# sourceMappingURL=page.css.map */
