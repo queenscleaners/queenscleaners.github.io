@@ -8,10 +8,11 @@ body {
   padding: 1.5em 1em 0.5em 1em;
 }
 
-@media (min-width: 476px) {
+@media (min-width: 1000px) {
   body {
     padding: 2.5em 2em;
     margin: auto;
     width: 75%;
+    font-size: 1.2em;
   }
 }/*# sourceMappingURL=page.css.map */

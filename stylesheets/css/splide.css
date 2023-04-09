@@ -12,7 +12,13 @@
   height: auto;
 }
 
-@media (min-width: 476px) {
+@media (min-width: 1000px) {
+  .section-splide {
+    width: 75%;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
   .section-splide {
     width: 50%;
   }

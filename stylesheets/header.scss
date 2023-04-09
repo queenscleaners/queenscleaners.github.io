@@ -19,13 +19,25 @@ header {
 
 .header-description {
   margin: 0;
-  font-weight: 200;
-  font-size: 0.95em;
+  font-weight: 300;
+  font-size: 0.9em;
 }
 
-@media (min-width: 476px) {
+@media (min-width: 1000px) {
   header {
-    margin-bottom: 4em;
+    margin-bottom: 2.5em;
+  }
+  .header-title {
+    font-size: 4em;
+  }
+  .header-description {
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-title {
+    font-size: 4.75em;
   }
   .header-description {
     max-width: 50%;
