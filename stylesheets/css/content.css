@@ -4,7 +4,7 @@
 
 @media (min-width: 1000px) {
   .section-content,
-  .section-contact-us {
+  .section-location {
     width: 50%;
   }
   .desktop-flexbox {
