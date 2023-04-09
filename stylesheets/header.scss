@@ -25,13 +25,14 @@ header {
 
 @media (min-width: 1000px) {
   header {
-    margin-bottom: 2.5em;
+    margin-bottom: 1.5em;
   }
   .header-title {
     font-size: 4em;
   }
   .header-description {
-    max-width: 45%;
+    max-width: 60%;
+    font-size: 0.8em;
   }
 }
 

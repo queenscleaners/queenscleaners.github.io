@@ -1,19 +1,124 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
-body {
-  padding: 1.5em 1em .5em 1em;
+.heading {
+  margin: 0 0 0.25em 0;
+  font-weight: 400;
+  font-size: 1.05em;
+}
+
+.label {
+  margin: 0 0 0.25em 0;
+  font-weight: 300;
+  font-size: 0.95em;
+}
+
+.description,
+.list-item {
+  margin: 0;
+  font-weight: 200;
+  font-size: 0.95em;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em 0 0;
+  padding-left: 0;
+  gap: 0.2em;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.day-label {
+  display: inline-block;
+  font-weight: 300;
+  width: 6em;
+}
+
+.phone-number-label,
+.address-label {
+  display: inline-block;
+  font-weight: 300;
+}
+
+.google-maps-container {
+  margin-top: 1em;
+  width: calc(100vw - 32px);
+}
+
+.google-maps-iframe {
+  width: 100%;
+  height: auto;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.desktop-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 600px) {
+  .google-maps-container {
+    width: 100%;
+  }
+  .section-business-hours {
+    width: 36%;
+  }
+  .section-location {
+    width: 60%;
+  }
+}
+
+@media (min-width: 800px) {
+  .section-location {
+    width: 45%;
+  }
 }
 
 @media (min-width: 1000px) {
-  body {
-    padding: 2.5em 2em;
-    margin: auto;
-    width: 75%;
+  .section-content,
+  .section-location {
+    width: 50%;
+  }
+  .desktop-flexbox {
+    gap: 2em;
+  }
+}
 
-    font-size: 1.2em;
+@media (min-width: 1000px) {
+  .list-item {
+    padding: 1em 0;
+  }
+  .day-label {
+    min-width: 100px;
+  }
+  .description {
+    line-height: 1.5em;
+  }
+  .section-content,
+  .section-location {
+    flex-grow: 1;
+    width: 40%;
+  }
+  .google-maps-iframe {
+    min-height: 360px;
   }
 }
