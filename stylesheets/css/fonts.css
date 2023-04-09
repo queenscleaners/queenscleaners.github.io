@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Goudy Titling W05 SemiBold";
+  src: url("../../fonts/GTWSB/GTWSB.eot");
+  /* IE9 */
+  src: url("../../fonts/GTWSB/GTWSB.eot?#iefix") format("embedded-opentype"), url("../../fonts/GTWSB/GTWSB.woff2") format("woff2"), url("../../fonts/GTWSB/GTWSB.woff") format("woff"), url("../../fonts/GTWSB/GTWSB.ttf") format("truetype"), url("../../fonts/GTWSB/GTWSB.svg#Goudy Titling W05 SemiBold") format("svg");
+  /* iOS 4.1- */
+}/*# sourceMappingURL=fonts.css.map */
