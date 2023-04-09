@@ -6,4 +6,12 @@ body, html {
 
 body {
   padding: 1.5em 1em 0.5em 1em;
+}
+
+@media (min-width: 476px) {
+  body {
+    padding: 2.5em 2em;
+    margin: auto;
+    width: 75%;
+  }
 }/*# sourceMappingURL=page.css.map */

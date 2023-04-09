@@ -48,4 +48,15 @@
 .google-maps-iframe {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 476px) {
+  .list-item {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em 0;
+  }
+  .day-label {
+    min-width: 100px;
+  }
 }/*# sourceMappingURL=body.css.map */

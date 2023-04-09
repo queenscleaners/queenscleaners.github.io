@@ -22,3 +22,12 @@ header {
   font-weight: 200;
   font-size: 0.95em;
 }
+
+@media (min-width: 476px) {
+  header {
+    margin-bottom: 4em;
+  }
+  .header-description {
+    max-width: 50%;
+  }
+}

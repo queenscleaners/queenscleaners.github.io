@@ -29,6 +29,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/css/page.css?version=1.0">
   <link rel="stylesheet" type="text/css" href="stylesheets/css/header.css?version=1.0">
   <link rel="stylesheet" type="text/css" href="stylesheets/css/body.css?version=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheets/css/content.css?version=1.0">
   <link rel="stylesheet" type="text/css" href="stylesheets/css/footer.css?version=1.0">
   <link rel="stylesheet" type="text/css" href="stylesheets/css/style.css?version=1.0">
   <link rel="stylesheet" type="text/css" href="stylesheets/css/splide.css?version=1.0">
@@ -59,61 +60,63 @@
     </div>
   </header>
   <main>
-    <section>
-      <div class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide"><img class="image-gallery-image" src="images/image0.jpg" alt="Image Gallery"
-                class="img-fluid"></li>
-            <li class="splide__slide"><img class="image-gallery-image" src="images/image1.jpg" alt="Image Gallery"
-                class="img-fluid"></li>
-            <li class="splide__slide"><img class="image-gallery-image" src="images/image2.jpg" alt="Image Gallery"
-                class="img-fluid"></li>
-            <li class="splide__slide"><img class="image-gallery-image" src="images/image3.jpg" alt="Image Gallery"
-                class="img-fluid"></li>
-            <li class="splide__slide"><img class="image-gallery-image" src="images/image4.jpg" alt="Image Gallery"
-                class="img-fluid"></li>
+    <div class="desktop-flexbox">
+      <section class="section-splide">
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img class="image-gallery-image" src="images/image0.jpg" alt="Image Gallery"
+                  class="img-fluid"></li>
+              <li class="splide__slide"><img class="image-gallery-image" src="images/image1.jpg" alt="Image Gallery"
+                  class="img-fluid"></li>
+              <li class="splide__slide"><img class="image-gallery-image" src="images/image2.jpg" alt="Image Gallery"
+                  class="img-fluid"></li>
+              <li class="splide__slide"><img class="image-gallery-image" src="images/image3.jpg" alt="Image Gallery"
+                  class="img-fluid"></li>
+              <li class="splide__slide"><img class="image-gallery-image" src="images/image4.jpg" alt="Image Gallery"
+                  class="img-fluid"></li>
+            </ul>
+          </div>
+          <button class="splide__toggle" type="button">
+            <span class="splide__toggle__play">Play</span>
+            <span class="splide__toggle__pause">Pause</span>
+          </button>
+        </div>
+      </section>
+      <section class="section-content">
+        <div class="container">
+          <div class="heading">Our Services</div>
+          <p class="label">Eco-Friendly Dry Cleaning</p>
+          <p class="description">We use ECO-friendly solvent for your health and the environment. Your garments will
+            be handled with
+            care. They will also be thoroughly cleaned and hand finished.</p>
+        </div>
+        <div class="container">
+          <p class="label">In-House Services & Same Day Service</p>
+          <p class="description">All of our work are performed on premise, including alterations. If you drop off
+            your clothes before
+            10AM, you'll be able to pick up by 4PM.</p>
+        </div>
+        <div class="container">
+          <p class="label">Professional Alterations</p>
+          <p class="description">Over 30 years of experience with alterations and repairs for your garments.</p>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="heading">Business Hours</div>
+          <ul class="list">
+            <li class="list-item"><span class="day-label">Sunday</span> <span class="strikethrough">Closed</span></li>
+            <li class="list-item"><span class="day-label">Monday</span> 8:00 a.m. - 7:00 p.m.</li>
+            <li class="list-item"><span class="day-label">Tuesday</span> 8:00 a.m. - 7:00 p.m.</li>
+            <li class="list-item"><span class="day-label">Wednesday</span> 8:00 a.m. - 7:00 p.m.</li>
+            <li class="list-item"><span class="day-label">Thursday</span> 8:00 a.m. - 7:00 p.m.</li>
+            <li class="list-item"><span class="day-label">Friday</span> 8:00 a.m. - 7:00 p.m.</li>
+            <li class="list-item"><span class="day-label">Saturday</span> 8:30 a.m. - 5:00 p.m.</li>
           </ul>
         </div>
-        <button class="splide__toggle" type="button">
-          <span class="splide__toggle__play">Play</span>
-          <span class="splide__toggle__pause">Pause</span>
-        </button>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="heading">Our Services</div>
-        <p class="label">Eco-Friendly Dry Cleaning</p>
-        <p class="description">We use ECO-friendly solvent for your health and the environment. Your garments will
-          be handled with
-          care. They will also be thoroughly cleaned and hand finished.</p>
-      </div>
-      <div class="container">
-        <p class="label">In-House Services & Same Day Service</p>
-        <p class="description">All of our work are performed on premise, including alterations. If you drop off
-          your clothes before
-          10AM, you'll be able to pick up by 4PM.</p>
-      </div>
-      <div class="container">
-        <p class="label">Professional Alterations</p>
-        <p class="description">Over 30 years of experience with alterations and repairs for your garments.</p>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="heading">Business Hours</div>
-        <ul class="list">
-          <li class="list-item"><span class="day-label">Sunday</span> <span class="strikethrough">Closed</span></li>
-          <li class="list-item"><span class="day-label">Monday</span> 8:00 a.m. - 7:00 p.m.</li>
-          <li class="list-item"><span class="day-label">Tuesday</span> 8:00 a.m. - 7:00 p.m.</li>
-          <li class="list-item"><span class="day-label">Wednesday</span> 8:00 a.m. - 7:00 p.m.</li>
-          <li class="list-item"><span class="day-label">Thursday</span> 8:00 a.m. - 7:00 p.m.</li>
-          <li class="list-item"><span class="day-label">Friday</span> 8:00 a.m. - 7:00 p.m.</li>
-          <li class="list-item"><span class="day-label">Saturday</span> 8:30 a.m. - 5:00 p.m.</li>
-        </ul>
-      </div>
-    </section>
+      </section>
+    </div>
     <section>
       <div class="container">
         <div class="heading">Contact Us</div>

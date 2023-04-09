@@ -11,3 +11,10 @@
   width: 100%;
   height: auto;
 }
+
+@media (min-width: 476px) {
+  .section-splide {
+    // display: none;
+    width: 50%;
+  }
+}
