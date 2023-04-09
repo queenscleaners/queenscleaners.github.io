@@ -118,4 +118,7 @@
   .google-maps-iframe {
     min-height: 360px;
   }
+  .section-business-hours {
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=page.css.map */
